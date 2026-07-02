@@ -1,0 +1,87 @@
+@import url("./site.css");
+
+.legal-page {
+    padding: 36px 0 56px;
+}
+
+.legal-shell {
+    padding: 28px;
+    border-radius: var(--radius-lg);
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--siney-border);
+    box-shadow: var(--shadow-green);
+}
+
+.legal-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 24px 0 28px;
+}
+
+.legal-nav a {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: var(--radius-pill);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    color: var(--siney-muted);
+    font-size: 0.9rem;
+}
+
+.legal-nav a.active,
+.legal-nav a:hover {
+    color: var(--siney-text);
+    background: rgba(75, 232, 52, 0.12);
+    border-color: var(--siney-border);
+}
+
+.agreement {
+    display: none;
+}
+
+.agreement.active {
+    display: block;
+}
+
+.agreement h1 {
+    margin: 0 0 10px;
+    font-family: "Bowlby One", cursive;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    line-height: 1.2;
+}
+
+.agreement h2 {
+    margin: 28px 0 8px;
+    font-size: 1.15rem;
+    color: var(--siney-green);
+}
+
+.agreement p,
+.agreement li {
+    color: var(--siney-muted);
+    line-height: 1.75;
+}
+
+.agreement ul {
+    margin: 0 0 14px 20px;
+    padding: 0;
+}
+
+.agreement li + li {
+    margin-top: 8px;
+}
+
+.meta {
+    margin-bottom: 22px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.92rem;
+}
+
+.legal-note {
+    margin-top: 28px;
+    padding-top: 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.45);
+    font-size: 0.88rem;
+    line-height: 1.65;
+}
